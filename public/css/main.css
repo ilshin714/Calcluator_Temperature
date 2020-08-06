@@ -1,0 +1,109 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00aaff, #00ff6c);
+}
+
+
+.calculatorFrame {
+    margin: 10% auto;
+    width : 400px;
+
+    border: 1px solid #777;
+    background-color: #999;
+}
+
+
+.container{
+    width: 97%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    align-items: center;
+    justify-content: center;
+    align-content: space-between;
+}
+
+
+.menuBar{
+    flex-grow: 9;
+}
+.menuButton{
+    flex-grow: 1;
+}
+
+.navigation{
+    flex-grow: 1;
+}
+.title{
+    flex-grow: 11;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.option{
+    flex-grow: 3;
+    height: 30px;
+}
+
+.output{
+    flex-grow: 12;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.input {
+    font-weight: bold;
+    flex-grow: 12;
+    height: 50px;
+    font-size: 2rem;
+}
+
+.empty{
+    background-color: #999;
+    flex-grow: 4;
+}
+
+.button-f{
+    background-color: #bbb;
+    text-align: center;
+    flex-grow: 4;
+    font-size: 1.5rem;
+}
+
+.button{
+    font-size: 2rem;
+    flex-grow: 4;
+    background-color: aliceblue;
+    text-align: center;
+  
+}
+.button:hover {
+    background-color: #aaa;
+}
+
+.button-f:hover {
+    background-color: #aaa;
+}
+
+button {
+    width: 100%;
+    height : 50px;
+    cursor: pointer;
+    border: 1px solid white;
+    outline: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+}

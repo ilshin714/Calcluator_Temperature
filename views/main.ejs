@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel = "stylesheet" href="/css/main.css" type="text/css">
+    <script src = ""></script>
+</head>
+<body>
+    <form name= "calculatorForm" method="post" action= "/main" >
+        <div class= "calculatorFrame">
+            <div class="container">
+                <div class = "menuBar">Calculator</div>
+                <div class = "menuButton">ㅡ</div>
+                <div class = "menuButton">ㅁ</div>
+                <div class = "menuButton">X</div>
+            </div>
+            
+            <div class="container">
+                <div class = "navigation">=</div>
+                <div class = "title">Temperature</div>
+            </div>
+        
+            <div class="container">
+                <div class = "input" ><%if(typeof input !== 'undefined'){%><%= input %><%}%> </div>
+            </div>
+
+            <div class="container">
+                <div class = "option">
+                    <select name = "inputType" >
+                        <option value = "c" <%if(typeof inputType !== 'undefined' && inputType === 'c'){%>selected<%}%>>Celsius</option>
+                        <option value = "f" <%if(typeof inputType !== 'undefined' && inputType === 'f'){%>selected<%}%>>Fahrenheit</option>
+                        <option value = "k" <%if(typeof inputType !== 'undefined' && inputType === 'k'){%>selected<%}%>>Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class = "container">
+                <div class = "output" ><%if(typeof output !== 'undefined'){%><%= output %><%}%></div>
+            </div>
+
+            <div class="container">
+                <div class = "option">
+                    <select name = "outputType" >
+                        <option value = "c" <%if(typeof outputType !== 'undefined' && outputType === 'c'){%>selected<%}%>>Celsius</option>
+                        <option value = "f" <%if(typeof outputType !== 'undefined' && outputType === 'f'){%>selected<%}%>>Fahrenheit</option>
+                        <option value = "k" <%if(typeof outputType !== 'undefined' && outputType === 'k'){%>selected<%}%>>Kelvin</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class = "container">
+                <div class = "empty"></div>
+                <div class = "button-f"><button type = "submit" name= "button" value = "CE">CE</button></div>
+                <div class = "button-f"><button  type = "submit" name = "button" value = "delete">DEL</button></div>
+            </div>
+            
+            <div class = "container">
+                <div class = "button"><button  type = "submit" name = "button" value = "7">7</button></div>
+                <div class = "button"><button  type = "submit" name = "button" value = "8">8</button></div>
+                <div class = "button"><button  type = "submit" name = "button" value = "9">9</button></div>
+            </div>
+            <div class = "container">
+                <div class = "button"><button  type = "submit" name = "button" value = "4">4</button></div>
+                <div class = "button"><button type = "submit"  name = "button" value = "5">5</button></div>
+                <div class = "button"><button  type = "submit" name = "button" value = "6">6</button></div>
+            </div>
+            <div class = "container">
+                <div class = "button"><button type = "submit"  name = "button" value = "1">1</button></div>
+                <div class = "button"><button  type = "submit" name = "button" value = "2">2</button></div>
+                <div class = "button"><button  type = "submit" name = "button" value = "3">3</button></div>
+            </div>
+            <div class = "container">
+                <div class = "button"><button  type = "submit" name = "button" value = "+/-">+/-</button></div>
+                <div class = "button"><button type = "submit"  name = "button" value = "0">0</button></div>
+                <div class = "button"><button type = "submit" name ="button" value = ".">.</button></div>
+            </div>
+            
+        </div>
+    </form>
+    
+</body>
+</html>

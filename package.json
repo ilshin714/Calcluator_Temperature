@@ -1,0 +1,23 @@
+{
+  "name": "calcluator_temperature",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "ejs": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "express-messages": "*",
+    "connect-flash": "*",
+    "mongoose": "*",
+    "express-fileupload": "*",
+    "fs-extra": "*"
+  }
+}
